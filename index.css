@@ -1,0 +1,114 @@
+@import "https://fonts.googleapis.com/css2?family=Fira+Code&family=Major+Mono+Display&display=swap";
+
+:root {
+    --bg-color: #111;
+    --text-color: white;
+    --theme-primary: orangered;
+    --theme-secondary: gold;
+  }
+  
+  * {
+    color: var(--text-color);
+    font-family: "Major Mono Display", monospace;
+    outline: none;
+  }
+  
+  *:focus {
+    box-shadow: 0 -.1em 0 0 currentcolor;
+  }
+
+  p, li, button {
+    font-family: "Fira Code", monospace;
+  }
+
+  h2 {
+    font-family: "Courier New", monospace;
+  }
+  
+  nav {
+    height: 3em;
+    font-size: 1.3em;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+  }
+  
+  nav a {
+    transition: color .15s ease-in, box-shadow .15s ease-in;
+    text-decoration: none;
+    border-left: 1em solid var(--text-color);
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav a:hover, nav a:focus {
+    box-shadow: 0 3em 0 0 royalblue inset;
+    color: var(--theme-primary);
+  }
+  
+  .container {
+    background: linear-gradient(4.5deg, royalblue 40%, var(--bg-color) 40.1%);
+    /* background-color: var(--bg-color); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }  
+  
+  .caret {
+    animation: blink 1s infinite linear;
+    background-color: var(--text-color);
+    height: 1.7em;
+    width: 1.2em;
+  }
+  
+  .step-container {
+    height: 10em;
+    width: 50%;
+  }
+  
+  .step-text {
+    font-size: 1.33em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+    height: 1em;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0%;
+    }
+    49% {
+      opacity: 0%
+    }
+    50% {
+      opacity: 100;
+    }
+    99% {
+      opacity: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

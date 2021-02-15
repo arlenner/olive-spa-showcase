@@ -1,0 +1,10 @@
+
+  .portrait {
+    z-index:1;
+    background-image: url('../../assets/profile_sm2.jpg');
+    border-radius: 50%;
+    border: .25em solid currentColor;
+    height: 400px;
+    width: 400px;
+  }
+  

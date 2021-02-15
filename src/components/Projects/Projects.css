@@ -1,0 +1,28 @@
+
+.project-picture {
+    z-index: 0;
+    position: absolute;
+    left: 10vw;
+    top: 15vh;
+    width: 60vw;
+    height: 40vh;
+    border-radius: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.olivejs {
+    background-image: url('../../assets/olivejs.png');
+}
+
+.hexys {
+    background-image: url('../../assets/hexys-main.png');
+}
+
+.matchjs {
+    background-image: url('../../assets/matchjs.png');
+}
+
+.c-gen {
+    background-image: url('../../assets/c-gen-main.png');
+}

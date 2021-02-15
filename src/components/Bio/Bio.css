@@ -1,0 +1,73 @@
+
+
+:root {
+    --border-std: 4px solid white;
+}
+
+.bio-panel {
+    position: relative;
+    padding: 2em;
+    height: 50vh;
+    border-radius: 0 0 0 1em;
+    border: var(--border-std);
+    border-right: #111;
+    border-top: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: wrap;
+    flex-wrap: wrap;
+    width: 80vw;
+    font-size: 1.3em;
+    z-index: 1;
+}
+
+.bio-panel h1, h2 {
+    margin-top: .5em;
+}
+.bio-panel li {
+    margin: 1em;
+}
+.bio-panel * {
+    z-index: 1;
+}
+
+.bio-panel-header {}
+
+.bio-panel-subtitle {}
+
+.bio-text-container {
+    height: 6px;
+}
+
+.bio-button {
+    transition: transform .4s ease-in-out, box-shadow .5s ease-in;
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    font-size: 2em;
+    font-weight: 700;
+    border: var(--border-std);
+    border-radius: 50%;
+    z-index: 3;
+    bottom: 25vh;
+    left: 10vw;
+    background-color: royalblue;
+    transform: scale(1.0);
+}
+
+.bio-button:focus , .bio-button:hover {
+    box-shadow: 0 0 0 2em #111 inset;
+}
+
+.bio-button:hover {
+    color:royalblue
+}
+
+.bio-button:active {
+    color: orangered;
+}
+
+.bio-button:disabled {
+    color: #999;
+}
