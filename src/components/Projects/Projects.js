@@ -46,7 +46,7 @@ const ProjectPanel = ({name, url, desc}) =>
                     })
                     .subscribe(
                         ACTIONS.NEXT_PROJ,
-                        hx => hx.css({ transitionDelay: '0s', transform: 'translatex(500px)', opacity: 0 })
+                        hx => hx.css({ transitionDelay: '.5s', transform: 'translatex(500px)', opacity: 0 })
                     )
 
 const ProjectButton = () =>
