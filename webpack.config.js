@@ -6,7 +6,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        historyApiFallback: true;
+        historyApiFallback: true
     },
     module: {
         rules: [
@@ -21,7 +21,7 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             },
             {
-                test: /\.jpe?g|.png/,
+                test: /\.(jpe?g|png|ico)$/i,
                 exclude: /node_modules/,
                 use: ['file-loader']
             }

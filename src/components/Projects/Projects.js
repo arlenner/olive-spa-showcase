@@ -6,17 +6,14 @@ import './Projects.css'
 
 const { projects } = data
 
-const exclude = arg => arr => arr.filter(i => i.name !== arg)
-
 const ProjectPanel = ({name, url, desc}) => 
     html()
-        .section().class('bio-panel')
+        .section().class('project-panel')
         .subscribe(
             ACTIONS.NEXT_PROJ, 
             (hx, {projectIdx}) => hx.timer(2000, hy => hy.replace(ProjectPanel(projects[projectIdx])))
         )
         .open()
-            .div()
             .concat(
                 StepText({
                     str: name,
@@ -25,9 +22,32 @@ const ProjectPanel = ({name, url, desc}) =>
                     size: 1.6
                 })
             )
-            .div().class('project-picture').class(name)
-            .a().href(url).on('click', () => {}, false)
-            .p().text(desc)
+            .div().class('project-inner').open()
+                .p()
+                    .text(desc)
+                    .transition({
+                        type: 'fade',
+                        direction: 'right',
+                        delay: .2,
+                        curve: [.1, .2, .4, 1]
+                    })
+                    .subscribe(
+                        ACTIONS.NEXT_PROJ, 
+                        hx => hx.css({transitionDelay: '.5s', transform: 'translatex(500px)', opacity: 0})
+                    )
+                .a().href(url).open()
+                .div()
+                    .class('project-picture', name)
+                    .transition({
+                        type: 'fade',
+                        direction: 'right',
+                        velocity: 500,
+                        curve: [.1, .2, .4, 1],
+                    })
+                    .subscribe(
+                        ACTIONS.NEXT_PROJ,
+                        hx => hx.css({ transitionDelay: '0s', transform: 'translatex(500px)', opacity: 0 })
+                    )
 
 const ProjectButton = () =>
     html()
