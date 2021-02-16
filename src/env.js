@@ -18,7 +18,7 @@ const projects = [
     name: 'olivejs', 
     url: 'https://github.com/arlenner/olivejs', 
     image: './assets/olivejs.png',
-    desc: 'An extremely lightweight minimalsts vanilla SPA framework. I used it to build this webpage!'
+    desc: `An extremely lightweight minimalist's vanilla SPA framework. I used it to build this webpage!`
   },
   {
     name: 'matchjs',
