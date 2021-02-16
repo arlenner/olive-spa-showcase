@@ -1,6 +1,4 @@
 
-
-
 .project-panel {
     padding: 2em;
     height: 50vh;
@@ -63,6 +61,9 @@
         height: 70vh;
         flex-direction: column;
     }
+    .project-panel h1 {
+        font-size: 1em;
+    }
     .project-button {
         height: 3em;
         width: 3em;
@@ -76,8 +77,8 @@
     }
 
     .project-picture {
-        height: 18em;
-        width: 18em;
+        height: 8em;
+        width: 15em;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
