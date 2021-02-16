@@ -74,11 +74,12 @@
     .project-inner {
         flex-direction: column-reverse;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     .project-picture {
-        height: 10em;
-        width: 18em;
+        height: 12em;
+        width: 20em;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
