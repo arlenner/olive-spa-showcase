@@ -22,6 +22,12 @@ const ProjectPanel = ({name, url, desc}) =>
                     size: 1.6
                 })
             )
+            .subscribe(
+                ACTIONS.NEXT_PROJ,
+                hx => hx.css({
+                    opacity: 0
+                })
+            )
             .div().class('project-inner').open()
                 .p()
                     .text(desc)
@@ -41,7 +47,7 @@ const ProjectPanel = ({name, url, desc}) =>
                     .transition({
                         type: 'fade',
                         direction: 'right',
-                        velocity: 500,
+                        velocity: 200,
                         curve: [.1, .2, .4, 1],
                     })
                     .subscribe(
