@@ -34,7 +34,7 @@ const projects = [
   },
   {
     name: "c-gen",
-    url: 'https://arlenner.github.io/cgen',
+    url: 'https://arlenner.github.io/c-gen',
     image: './assets/c-gen-main.png',
     desc: 'A color ramp generator for helping artists and designers build palettes.'
   }
