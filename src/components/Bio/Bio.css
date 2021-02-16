@@ -71,3 +71,19 @@
 .bio-button:disabled {
     color: #999;
 }
+
+@media (max-width: 500px) {
+    .bio-panel {
+        font-size: .8em;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        height: 70vh;
+    }
+    .bio-button {
+        height: 3em;
+        width: 3em;
+        bottom: 15vh;
+        font-size: 1.5em;
+        border: 2px solid white;
+    }
+}

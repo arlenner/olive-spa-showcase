@@ -21,7 +21,7 @@ export const Home = () =>
             StepTextCycler([
                 "Howdy, Earthlings.", 
                 "My name is Ross.",
-                "I'm a Full Stack Developer.",
+                "I'm a Full Stack Dev.",
                 "Take a look around!",
             ], 1.6)
         ),

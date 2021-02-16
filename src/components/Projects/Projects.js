@@ -55,12 +55,12 @@ const ProjectButton = () =>
             .disabled()
             .text('=>')
             .class('bio-button')
-            .timer(3000, hx => hx.removeAttr('disabled'))
+            .timer(2000, hx => hx.removeAttr('disabled'))
             .on('click', hx => hx.dispatch(ACTIONS.NEXT_PROJ))
             .subscribe(
                 ACTIONS.NEXT_PROJ, 
                 ha => ha.disabled().timer(
-                    4000, 
+                    3000, 
                     hb => hb.removeAttr('disabled')
                 )
             )

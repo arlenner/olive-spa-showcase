@@ -103,6 +103,30 @@
     }
   }
   
+
+  @media (max-width: 500px) {
+    nav {
+      font-size: .75em;
+    }  
+    .step-text {
+      font-size: .75em;
+      flex-wrap: wrap;
+    }
+    .step-container {
+      width: 80%;
+    }
+    .container {
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .portrait {
+      height: 250px;
+      width: 250px;
+      background-image: url('./src/assets/profile_mobile.jpg');
+    }
+  }
   
   
   

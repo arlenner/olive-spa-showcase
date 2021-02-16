@@ -1,4 +1,6 @@
 
+
+
 .project-panel {
     padding: 2em;
     height: 50vh;
@@ -18,10 +20,9 @@
 }
 
 .project-picture {
-    z-index: 0;
+    z-index: 1;
     height: 17em;
     width: 25em;
-    border-radius: 1em;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,4 +53,48 @@
 
 .c-gen {
     background-image: url('../../assets/c-gen-main.png');
+}
+
+@media (max-width: 500px) {
+    .project-panel {
+        font-size: .8em;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        height: 70vh;
+        flex-direction: column;
+    }
+    .project-button {
+        height: 3em;
+        width: 3em;
+        bottom: 15vh;
+        font-size: 1.5em;
+        border: 2px solid white;
+    }
+    .project-inner {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .project-picture {
+        height: 18em;
+        width: 18em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .olivejs {
+        background-image: url('../../assets/olivejs.png');
+    }
+    
+    .hexys {
+        background-image: url('../../assets/hexys-main.png');
+    }
+    
+    .matchjs {
+        background-image: url('../../assets/matchjs.png');
+    }
+    
+    .c-gen {
+        background-image: url('../../assets/c-gen-main.png');
+    }
 }
