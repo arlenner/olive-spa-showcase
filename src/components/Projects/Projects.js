@@ -22,12 +22,6 @@ const ProjectPanel = ({name, url, desc}) =>
                     size: 1.6
                 })
             )
-            .subscribe(
-                ACTIONS.NEXT_PROJ,
-                hx => hx.css({
-                    opacity: 0
-                })
-            )
             .div().class('project-inner').open()
                 .p()
                     .text(desc)
