@@ -74,7 +74,7 @@
     .project-inner {
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .project-picture {
