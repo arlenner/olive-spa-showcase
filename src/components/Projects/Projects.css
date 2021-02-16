@@ -61,7 +61,7 @@
         height: 70vh;
         flex-direction: column;
     }
-    .project-panel h1 {
+    .project-panel h2 {
         font-size: 1em;
     }
     .project-button {
@@ -77,8 +77,8 @@
     }
 
     .project-picture {
-        height: 6em;
-        width: 12em;
+        height: 10em;
+        width: 18em;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
