@@ -16,7 +16,7 @@ export const ACTIONS = {
 const projects = [
   {
     name: 'olivejs', 
-    url: 'https://github.com/arlenner/olivejs', 
+    url: 'https://github.com/arlenner/olive', 
     image: './assets/olivejs.png',
     desc: `An extremely lightweight minimalist's vanilla SPA framework. I used it to build this webpage!`
   },
